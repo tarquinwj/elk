@@ -6,7 +6,7 @@ import type { Draft } from '~/types'
 
 const {
   draftKey,
-  initial,
+  initial = getDefaultDraft,
   expanded = false,
   placeholder,
   dialogLabelledBy,
