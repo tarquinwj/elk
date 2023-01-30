@@ -6,7 +6,7 @@ import type { Draft } from '~/types'
 
 const {
   draftKey,
-  initial = getDefaultDraft() as never /* Bug of vue-core */,
+  initial,
   expanded = false,
   placeholder,
   dialogLabelledBy,
@@ -26,7 +26,7 @@ const emit = defineEmits<{
 
 const { t } = useI18n()
 
-const draftState = useDraft(draftKey, initial)
+const draftState = useDraft(draftKey, initial || getDefaultDraft)
 const { draft } = $(draftState)
 
 const {

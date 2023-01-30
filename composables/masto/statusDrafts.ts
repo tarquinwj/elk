@@ -33,7 +33,7 @@ export function getDefaultDraft(options: Partial<Mutable<mastodon.v1.CreateStatu
       visibility: visibility || 'public',
       sensitive: sensitive ?? false,
       spoilerText: spoilerText || '',
-      language: language || getDefaultLanguage(),
+      language: language || 'en',
     },
     mentions,
     lastUpdated: Date.now(),
