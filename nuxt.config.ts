@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     'nuxt-vitest',
+    '@nuxt/devtools-edge',
     ...(isDevelopment || isWindows) ? [] : ['nuxt-security'],
     '~/modules/purge-comments',
     '~/modules/setup-components',
