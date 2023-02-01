@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxt/devtools-edge',
     '@pinia/nuxt',
     '@vue-macros/nuxt',
     '@nuxtjs/i18n',
@@ -24,7 +25,6 @@ export default defineNuxtConfig({
     'nuxt-vitest',
     '@unocss/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/devtools-edge',
     ...(isDevelopment || isWindows) ? [] : ['nuxt-security'],
     '~/modules/purge-comments',
     '~/modules/setup-components',
