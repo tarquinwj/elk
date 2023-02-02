@@ -17,14 +17,13 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/devtools-edge',
     '@pinia/nuxt',
     '@vue-macros/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
-    'nuxt-vitest',
-    '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@unocss/nuxt',
+    'nuxt-vitest',
     ...(isDevelopment || isWindows) ? [] : ['nuxt-security'],
     '~/modules/purge-comments',
     '~/modules/setup-components',
@@ -32,6 +31,7 @@ export default defineNuxtConfig({
     '~/modules/tauri/index',
     '~/modules/pwa/index', // change to '@vite-pwa/nuxt' once released and remove pwa module
     '~/modules/stale-dep',
+    '@nuxt/devtools-edge',
   ],
   experimental: {
     payloadExtraction: false,

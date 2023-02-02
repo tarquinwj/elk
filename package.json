@@ -78,7 +78,7 @@
     "@iconify-json/ph": "^1.1.3",
     "@iconify-json/ri": "^1.1.4",
     "@iconify-json/twemoji": "^1.1.10",
-    "@nuxt/devtools-edge": "0.0.0-27919613.61e23da",
+    "@nuxt/devtools-edge": "0.0.0-27922476.e796f11",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/i18n": "8.0.0-beta.9",
     "@pinia/nuxt": "^0.4.6",
